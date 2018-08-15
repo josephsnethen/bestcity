@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best City Guide</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <script>
+      function myFunction()
+      {
+        var x = document.getElementById("MainNav");
+        if (x.className === "MainNavDefault")
+        {
+          x.className += " Toggle";
+        }
+        else
+        {
+          x.className = "MainNavDefault";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="name"><a href="#">Best City Guide</a></h1>
+      <div class="MainNavDefault" id="MainNav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons icn-menu">menu</i></a>
+        <ul class="main-nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="features.html">features</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="events.html">events</a></li>
+          <li><a href="tours.html">tours</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img class="logo" src="img/portland_sign.jpg" alt="City">
+      <h1 class="headline">The Best City</h1>
+      <span class="tagline">The best drinks and eats in the best city ever.</span>
+    </div>
+    <!--/.banner-->
+
+    <div class="row">
+      <div class="primary col">
+        <h1>Welcome!</h1>
+        <p>Everything in this city is worth waiting in line for.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum posuere nisi, non luctus odio condimentum in. Integer ut enim ac odio bibendum sagittis. Mauris rhoncus lorem et nulla lacinia sodales. Proin ullamcorper, nibh et eleifend</p>
+
+        <p>fringilla, tellus tellus ultrices velit, at auctor sapien tortor sit amet dui. Maecenas ut consequat odio, at ultricies neque. Ut sem odio, bibendum a faucibus sit amet, porttitor ac sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p>Fusce nec cursus neque, nec interdum lorem. Praesent imperdiet dignissim nunc ullamcorper sagittis. Nam ultricies tellus non enim molestie imperdiet. Nulla ultrices lacinia risus et porttitor. Donec semper nibh tellus, eu tempus nisi tristique</p>
+
+
+      </div>
+      <!--/.primary-->
+
+      <div class="secondary col aside_container">
+        <div class="aside">
+          <h2>How to get here</h2>
+          <p>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+          <p>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+        </div>
+        <!--aside div-->
+      </div>
+      <!--/.secondary-->
+
+    </div>
+
+    <footer class="main-footer">
+      <span>&copy;2015 Residents of The Best City Ever.</span>
+    </footer>
+
+  </body>
+
+</html>

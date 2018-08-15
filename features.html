@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best City Guide</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <script>
+      function myFunction()
+      {
+        var x = document.getElementById("MainNav");
+        if (x.className === "MainNavDefault")
+        {
+          x.className += " Toggle";
+        }
+        else
+        {
+          x.className = "MainNavDefault";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="name"><a href="#">Best City Guide</a></h1>
+      <div class="MainNavDefault" id="MainNav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons icn-menu">menu</i></a>
+        <ul class="main-nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="features.html">features</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="events.html">events</a></li>
+          <li><a href="tours.html">tours</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img class="logo" src="img/portland_sign.jpg" alt="City">
+      <h1 class="headline">The Best City</h1>
+      <span class="tagline">The best drinks and eats in the best city ever.</span>
+    </div>
+    <!--/.banner-->
+
+    <div class="card_container">
+      <div class="card">
+        <i class="material-icons">fitness_center</i>
+        <h2>Fitness</h2>
+        <p>Hundreds of VR games and films have been released already. <a href="#">Oculus Story Studio</a> is one example of a company producing VR films.</p>
+        <a class="button" href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <i class="material-icons">palette</i>
+        <h2>Arts</h2>
+        <p>These experiences allow you to explore and interact with buildings and products in virtual reality. <a href="#">IKEA VR</a> is a popular example.</p>
+        <a class="button" href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <i class="material-icons">local_bar</i>
+        <h2>Drinks</h2>
+        <p>VR allows students to visit other places and other times. For instance, the BBC produced a <a href="#">360° video</a> that allows users to see the scale of dinosaurs in stereoscopic 3D.</p>
+        <a class="button" href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <i class="material-icons">directions_bike</i>
+        <h2>Bicycle</h2>
+        <p>In simulation and training, you can safely train for dangerous situations or hazardous environments.</p>
+        <a class="button" href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <i class="material-icons icn-soc">people</i>
+        <h2>Social Networking</h2>
+        <p>VR is finding its way into teleconferencing and social media. At the <a href="#">ethic conference in 2016</a>, Facebook demonstrated what it might look like in VR.</p>
+        <a class="button" href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <i class="material-icons">restaurant</i>
+        <h2>Food</h2>
+        <p>VR games let users experience a 3D environment, creating suspension of disbelief, which makes users experience the environment as real.</p>
+        <a class="button" href="#">Learn more</a>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <span>&copy;2015 Residents of The Best City Ever.</span>
+    </footer>
+
+  </body>
+
+</html>
