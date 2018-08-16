@@ -6,8 +6,8 @@
     <title>Best City | Contact</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/flexbox.css" rel="stylesheet" type="text/css">
     <script>
       function myFunction()
       {
@@ -55,11 +55,21 @@
 
         <legend>Your Basic Info</legend>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" placeholder="Full Name" required>
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email" placeholder="example@email.com" required>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="user_fname" placeholder="First Name" required>
 
+        <label for="lname">First Name:</label>
+        <input type="text" id="lname" name="user_lname" placeholder="Last Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="example@email.com" required>
+
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Your Profile</legend>
 
         <label>Gender:</label>
         <input type="radio" id="male" value="male" name="user_gender">
@@ -68,48 +78,26 @@
         <input type="radio" id="female" value="female" name="user_gender">
         <label for="female" class="light">Female</label>
 
-      </fieldset>
+        <label>Areas of Interest:</label>
 
-      <fieldset>
+        <input type="checkbox" id="fitness" value="interest_fitness" name="user_interest"><label class="light" for="fitness">Fitness</label><br>
 
-        <legend>Your Profile</legend>
+        <input type="checkbox" id="arts" value="interest_arts" name="user_interest"><label class="light" for="arts">Arts</label><br>
+
+        <input type="checkbox" id="drink" value="interest_drink" name="user_interest"><label class="light" for="drink">Drink</label><br>
+
+        <input type="checkbox" id="cycling" value="interest_cycling" name="user_interest"><label class="light" for="cycling">Cycling</label><br>
+
+        <input type="checkbox" id="networking" value="interest_networking" name="user_interest"><label class="light" for="networking">Social Networking</label><br>
+
+        <input type="checkbox" id="food" value="interest_food" name="user_interest"><label class="light" for="food">Food</label><br>
 
         <label for="bio">Biography</label>
         <textarea id="bio" name="user_bio" placeholder="Tell me about yourself"></textarea>
 
-
-        <label for="job">Job Role:</label>
-        <select id="job" name="user_job">
-            <optgroup label="Web">
-            <option value="no_selection">Please Select</option>
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="php_developer">PHP Developer</option>
-            <option value="python_developer">Python Developer</option>
-            <option value="rails_developer">Rails Developer</option>
-            <option value="web_designer_developer">Web Designer Developer</option>
-            <option value="wordpress_developer">Wordpress Developer</option>
-              </optgroup>
-
-            <optgroup label="Mobile">
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="frontend_developer">Front-End Developer</option>
-             </optgroup>
-          </select>
-
-
-        <label>Interests:</label>
-
-        <input type="checkbox" id="food" value="interest_food" name="user_interest"><label class="light" for="food">Food</label><br>
-
-        <input type="checkbox" id="drink" value="interest_drink" name="user_interest"><label class="light" for="drink">Drink</label><br>
-
-        <input type="checkbox" id="cycling" value="interest_cycling" name="user_interest"><label class="light" for="cycling">Cycling</label>
-
       </fieldset>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
       <p><a href="#" title="Newsletter" target="_blank">Newsletter</a> <a href="events.html" title="Events" target="_blank">Events</a></p>
 
     </form>

@@ -1,3 +1,14 @@
+
+
+
+/* =================================
+  Font
+==================================== */
+
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400|Varela+Round');
+
 /* =================================
   Base Element Styles
 ==================================== */
@@ -6,18 +17,25 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Varela Round', sans-serif;
-    line-height: 1.6;
+    font-family: 'Oxygen', sans-serif;
+    /* letter-spacing: 1px; */
+    font-size: 16px;
+    line-height: 1.5;
     color: #3a3a3a;
     margin: 0;
 }
+
+h1, h2, h3, button, footer, .button, .banner, .name {
+    font-family: 'Varela Round', sans-serif;
+}
+
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 p {
-    font-size: .95em;
+    font-size: 1em;
     margin-bottom: 1.8em;
 }
 h2, h3, a {
@@ -55,6 +73,7 @@ img {
     font-size: .95em;
     color: #006699;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .main-nav a:hover {
     color: #0099CC;
@@ -65,6 +84,9 @@ img {
 header {
     padding-top: .5em;
     padding-bottom: .5em;
+}
+footer {
+    text-shadow: 2px 2px 2px #000000;
 }
 .banner, .main-footer {
     text-align: center;
@@ -158,7 +180,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1.5em 1em;
-    border: 2px solid #006699;
+    border: 2px solid #000000;
     border-radius: 15px;
     margin: 10px;
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .3);
@@ -166,13 +188,11 @@ header {
 
 .card .material-icons {
     font-size: 4em;
-    color: #0099CC;
+    /* color: #0099CC; */
+
     text-align: center;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
 }
-
-
-
 
 
 .card:nth-of-type(1) {
@@ -185,34 +205,51 @@ header {
 }
 
 .card p a:link, .card p a:visited {
-    color: #3cb144;
-    font-weight: bold;
+    color: #0099CC;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
 }
 
 .card p a:hover, .card p a:active {
-    color: #0099CC;
+    color: #CC0099;
 }
 
 
-.icn-ent {
-    color: #79ccf5;
+
+/*
+.icn-pink {
+    color: #CC0099;
 }
-.icn-arch {
-    color: #fd6fa6;
+.icn-blue {
+    color: #0033CC;
 }
-.icn-edu {
-    color: #23bbae;
-}
-.icn-sim {
-    color: #2377bb;
-}
-.icn-soc {
-    color: #ada3f0;
-}
-.icn-menu {
-    color: #3cb144;
+.icn-yellow {
+    color: #FFFF00;
 }
 
+.icn-red {
+    color: #CC0000;
+}
+*/
+
+.icn-brown {
+    color: #996633;
+}
+.icn-purple {
+    color: #660099;
+}
+.icn-black {
+    color: #333333;
+}
+.icn-green {
+    color: #009900;
+}
+.icn-blue {
+    color: #0033CC;
+}
+
+.icn-orange {
+    color: #FF6600;
+}
 
 /* =================================
   Navigation Icon
@@ -220,6 +257,7 @@ header {
 .icn-menu {
     color: #006699;
     font-size: 3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
 }
 
 .icn-menu:hover, .MainNavDefault.Toggle .icn-menu:hover {
@@ -234,15 +272,14 @@ header {
     display: none;
 }
 
-/* Add a black background color to the top navigation */
+
 
 .MainNavDefault {
     overflow: hidden;
 }
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one
-("Home"). Show the link that contains should open and close the MainNavDefault (.icon) */
+/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the MainNavDefault (.icon) */
 
 @media (max-width: 768px) {
     .MainNavDefault a {
@@ -277,10 +314,6 @@ This class makes the MainNavDefault look good on small screens
     .MainNavDefault.Toggle .icon {
         position: absolute;
         top: 0;
-
-
-        /*background-image: url(../images/LightBlue.svg);  Keeps rollover image active on toggle*/
-        /* width: 120px;   Keeps rollover image active on toggle */
     }
     .MainNavDefault.Toggle a {
         display: block;
@@ -319,11 +352,6 @@ This class makes the MainNavDefault look good on small screens
 }
 
 
-
-
-
-
-
 /* =================================
   Form Styles
 ==================================== */
@@ -333,16 +361,16 @@ form {
     margin: 0 auto;
     padding: 10px 20px;
     border-radius: 15px;
-    border: 2px solid #006699;
+    border: 2px solid #000000;
     background: #f4f7f8;
     box-shadow: 5px 5px 3px 1px rgba(0, 102, 153, .4);
 }
 
-input[type="text"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
+input[type="text"], input[type="email"], textarea, select {
     width: 100%;
     height: auto;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 15px;
     color: #006699;
     border: none;
@@ -350,7 +378,7 @@ input[type="text"], input[type="date"], input[type="datetime"], input[type="emai
     border-radius: 10px;
     outline: 0;
     background-color: rgba(0, 102, 153,.08);
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.5) inset;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) inset;
     font-size: 16px;
 }
 
@@ -362,7 +390,7 @@ input[type="radio"], input[type="checkbox"] {
 
 input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
     color: #006699;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 input:focus, textarea:focus {
@@ -387,13 +415,25 @@ button {
     border-radius: 6px;
     background-color: #006699;
     box-shadow: 3px 3px 1px 1px rgba(0, 102, 153, .4);
+    text-shadow: 2px 2px 2px #000000;
     font-size: 18px;
     font-style: normal;
+    text-transform: uppercase;
 }
 
-button:hover {
-    opacity: .75;
+button[type="reset"]:hover, button[type="reset"]:active {
+    background-color: #CC0000;
+    border-color: #CC0000;
+    box-shadow: 3px 3px 1px 1px rgba(204, 0, 0, .4);
 }
+
+button[type="submit"]:hover, button[type="submit"]:active {
+    background-color: #009900;
+    border-color: #009900;
+    box-shadow: 3px 3px 1px 1px rgba(0, 153, 0, .4);
+}
+
+
 /* Creates space only between 2 sibling button elements */
 button + button {
     margin-left: 20px;
@@ -401,7 +441,7 @@ button + button {
 
 
 fieldset {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: none;
 }
 
@@ -416,6 +456,7 @@ legend {
 label {
     display: block;
     margin-bottom: 8px;
+    margin-top: 20px;
 }
 
 label.light {
